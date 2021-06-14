@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/styles/login.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - RentCar</title>
+</head>
+
+<body>
+
+  <header>
+    <div id="logo">
+      <h1>RentCar</h1>
+    </div>
+  </header>
+
+  <div class="register">
+    <div class="form">
+      <h2>LOGIN</h2>
+      <form>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Insira seu Email">
+        </div>
+
+        <div class="form-group">
+          <label for="senha">Senha</label>
+          <input type="password" id="senha" placeholder="Insira sua Senha">
+        </div>
+        <div>
+          <a href="resetPassword.html" class="senha"><small>Esqueceu sua senha?</small></a>
+        </div>
+        
+      </form>
+      <button type="button" id="addButton">Entrar</button>
+
+      <div class="login">
+        <a href="./views/cadastro.html">Não tenho conta</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-auth.js"></script>
+
+  <script src="/firebase.js"></script>
+  <script src="/public/js/login.js"></script>
+</body>
+
+</html>
