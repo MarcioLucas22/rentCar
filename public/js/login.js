@@ -6,7 +6,7 @@ addButton.addEventListener('click', function () {
   firebase.auth().signInWithEmailAndPassword(email.value, senha.value)
     .then((userCredential) => {
       var user = userCredential.user;
-      window.location.replace('initial-page.html')
+      window.location.replace('/views/initial-page.html')
     }).catch((error) => {
       var errorCode = error.code;
       var errorMessage = error.message;

@@ -24,6 +24,12 @@ document.querySelector('#files').addEventListener('change', function () {
     postPhoto(this.files[0]);
 });
 
+function pagamento() {
+    alert('Pagamento efetuado com sucesso!')
+}
+
+
+
 /*function newDiv() {
     descriptionCar.addNameCar()
     descriptionCar.addBrandCar()

@@ -75,6 +75,7 @@ header a {
 }
 
 .car {
+    display: block;
     margin: 40px;
     background-color: white;
     border-radius: 5px;

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/styles/login.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento</title>
+</head>
+
+<body>
+
+  <main>
+    <div class="pagamento">
+      <div class="form pagamento">
+        <h2>PAGAMENTO</h2>
+        <form action="/add-pagamento" method="POST">
+          <div class="form-group">
+            <label for="num_cartao">Número do cartão</label>
+            <input type="text" name="num_cartao" id="numCartao" placeholder="Insira o número do cartão">
+          </div>
+          <div class="form-group">
+            <label for="validade">Validade</label>
+            <input type="text" name="validade" id="validade" placeholder="Insira a validade">
+          </div>
+          <div class="form-group">
+            <label for="nome_titular">Nome do titular</label>
+            <input type="text" name="nome_titular" id="nomeTitular" placeholder="Insira o nome">
+          </div>
+          <div class="form-group">
+            <label for="cpf">CPF do titular</label>
+            <input type="text" name="cpf" id="cpf" placeholder="Insira o CPF">
+          </div>
+          <button type="submit" id="buttonPagamento" onclick="pagamento()">Efetuar Pagamento</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

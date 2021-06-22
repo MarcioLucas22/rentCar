@@ -30,7 +30,7 @@ body {
 }
 
 #tudo {
-  background-color: white;
+  background-color: var(--light-gray);
   border-radius: 5px;
 }
 
@@ -55,4 +55,28 @@ ul li {
 
 .price h1 {
   margin: 1rem 0 1rem 0;
+}
+
+.pagamento {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pagamento {
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  padding: 1rem;
+  background-color: var(--light-purple);
+  width: 100%;
+  color: white;
+  transition: 300ms;
+}
+
+#pagamento:hover {
+  background-color: white;
+  color: var(--light-purple);
 }

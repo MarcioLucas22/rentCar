@@ -128,4 +128,22 @@ small {
   text-decoration: underline;
 }
 
+/* CSS da página pagamento.html */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.pagamento {
+  height: 27rem;
+}
+
+.pagamento form {
+  margin-top: 1rem;
+}
+
 

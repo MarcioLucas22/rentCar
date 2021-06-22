@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/styles/style-alugar.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aluguel - Rent Car</title>
+</head>
+
+<body>
+  <main>
+    <div id="info-car">
+      <div class="foto">
+        <img src="/images/urus.jpg" alt="">
+      </div>
+      <div id="tudo">
+        {{#each carros}}
+        <div class="info">
+          <ul>
+            <li>Ano: {{ano}}</li>
+            <li>Cor: {{cor}}</li>
+            <li>Marca: {{marca}}</li>
+            <li>Modelo: {{modelo}}</li>
+            <li>Placa: {{placa}}</li>
+            <li>Valor Aluguel: R$ {{valor}},00/dia</li>
+          </ul>
+        </div>
+
+        <div class="price">
+          <p>Valor total previsto</p>
+          <h1>R${{valor}},00</h1>
+          <p>Em até 10x de R${{#formatValue valor}}{{/formatValue}},00</p>
+        </div>
+        {{/each}}
+        <div class="pagamento">
+          <a href="/alugar" id="pagamento">Pagar</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
